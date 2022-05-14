@@ -185,6 +185,11 @@
 		2A8E76432822E7A000C238D3 /* libopencv_tracking.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0FAAF27FAE13200FAD004 /* libopencv_tracking.4.5.5.dylib */; };
 		2A8E76442822E7A000C238D3 /* libopencv_imgproc.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0FA9027FAE13200FAD004 /* libopencv_imgproc.4.5.5.dylib */; };
 		2A8E76452822E7A000C238D3 /* libopencv_stitching.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0FA9327FAE13200FAD004 /* libopencv_stitching.4.5.5.dylib */; };
+		2A8E764E282F84CB00C238D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E764D282F84CB00C238D3 /* main.cpp */; };
+		2A8E7668282F84EC00C238D3 /* BVH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E7652282F84EB00C238D3 /* BVH.cpp */; };
+		2A8E7669282F84EC00C238D3 /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E765D282F84EB00C238D3 /* Renderer.cpp */; };
+		2A8E766A282F84EC00C238D3 /* Scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E7665282F84EC00C238D3 /* Scene.cpp */; };
+		2A8E766B282F84EC00C238D3 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A8E7667282F84EC00C238D3 /* Vector.cpp */; };
 		2AE0F86F27FADAF400FAD004 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AE0F86E27FADAF400FAD004 /* main.cpp */; };
 		2AE0FAC027FAE13200FAD004 /* libopencv_sfm.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0FA8827FAE13200FAD004 /* libopencv_sfm.4.5.5.dylib */; };
 		2AE0FAC127FAE13200FAD004 /* libopencv_sfm.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE0FA8827FAE13200FAD004 /* libopencv_sfm.4.5.5.dylib */; };
@@ -515,6 +520,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		2A8E7649282F84CB00C238D3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		2AE0F86A27FADAF400FAD004 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -598,6 +612,31 @@
 		2A8E76082822E78600C238D3 /* Material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Material.hpp; sourceTree = "<group>"; };
 		2A8E76092822E78600C238D3 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
 		2A8E76462822E7A500C238D3 /* work6.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = work6.entitlements; sourceTree = "<group>"; };
+		2A8E764B282F84CB00C238D3 /* work7 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = work7; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A8E764D282F84CB00C238D3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2A8E7652282F84EB00C238D3 /* BVH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BVH.cpp; sourceTree = "<group>"; };
+		2A8E7653282F84EB00C238D3 /* Renderer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Renderer.hpp; sourceTree = "<group>"; };
+		2A8E7654282F84EB00C238D3 /* BVH.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BVH.hpp; sourceTree = "<group>"; };
+		2A8E7655282F84EB00C238D3 /* Intersection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Intersection.hpp; sourceTree = "<group>"; };
+		2A8E7656282F84EB00C238D3 /* Bounds3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bounds3.hpp; sourceTree = "<group>"; };
+		2A8E7657282F84EB00C238D3 /* Sphere.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sphere.hpp; sourceTree = "<group>"; };
+		2A8E7658282F84EB00C238D3 /* global.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = global.hpp; sourceTree = "<group>"; };
+		2A8E7659282F84EB00C238D3 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		2A8E765A282F84EB00C238D3 /* AreaLight.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AreaLight.hpp; sourceTree = "<group>"; };
+		2A8E765B282F84EB00C238D3 /* Scene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Scene.hpp; sourceTree = "<group>"; };
+		2A8E765C282F84EB00C238D3 /* Triangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
+		2A8E765D282F84EB00C238D3 /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
+		2A8E765E282F84EB00C238D3 /* models */ = {isa = PBXFileReference; lastKnownFileType = folder; path = models; sourceTree = "<group>"; };
+		2A8E765F282F84EB00C238D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2A8E7660282F84EB00C238D3 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		2A8E7661282F84EB00C238D3 /* Light.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Light.hpp; sourceTree = "<group>"; };
+		2A8E7662282F84EB00C238D3 /* OBJ_Loader.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OBJ_Loader.hpp; sourceTree = "<group>"; };
+		2A8E7663282F84EB00C238D3 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		2A8E7664282F84EB00C238D3 /* Ray.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Ray.hpp; sourceTree = "<group>"; };
+		2A8E7665282F84EC00C238D3 /* Scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scene.cpp; sourceTree = "<group>"; };
+		2A8E7666282F84EC00C238D3 /* Material.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Material.hpp; sourceTree = "<group>"; };
+		2A8E7667282F84EC00C238D3 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		2A8E766C282FE7DD00C238D3 /* work7.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = work7.entitlements; sourceTree = "<group>"; };
 		2AE0F86C27FADAF400FAD004 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE0F86E27FADAF400FAD004 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2AE0FA8827FAE13200FAD004 /* libopencv_sfm.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_sfm.4.5.5.dylib; path = ../../../../../opt/homebrew/Cellar/opencv/4.5.5/lib/libopencv_sfm.4.5.5.dylib; sourceTree = "<group>"; };
@@ -947,6 +986,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A8E7648282F84CB00C238D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2AE0F86927FADAF400FAD004 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1214,6 +1260,7 @@
 				2A8E7559281DB05200C238D3 /* work4 */,
 				2A8E759D2820F53E00C238D3 /* work5 */,
 				2A8E75EE2822E76400C238D3 /* work6 */,
+				2A8E764C282F84CB00C238D3 /* work7 */,
 				2A84F5EE27FA3F5700CB3A97 /* Products */,
 				2AE0F4E427FAD7E500FAD004 /* Frameworks */,
 			);
@@ -1230,6 +1277,7 @@
 				2A8E7558281DB05200C238D3 /* work4 */,
 				2A8E759C2820F53E00C238D3 /* work5 */,
 				2A8E75ED2822E76400C238D3 /* work6 */,
+				2A8E764B282F84CB00C238D3 /* work7 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1300,6 +1348,37 @@
 				2A8E75EF2822E76400C238D3 /* main.cpp */,
 			);
 			path = work6;
+			sourceTree = "<group>";
+		};
+		2A8E764C282F84CB00C238D3 /* work7 */ = {
+			isa = PBXGroup;
+			children = (
+				2A8E766C282FE7DD00C238D3 /* work7.entitlements */,
+				2A8E765A282F84EB00C238D3 /* AreaLight.hpp */,
+				2A8E7656282F84EB00C238D3 /* Bounds3.hpp */,
+				2A8E7652282F84EB00C238D3 /* BVH.cpp */,
+				2A8E7654282F84EB00C238D3 /* BVH.hpp */,
+				2A8E7659282F84EB00C238D3 /* CMakeLists.txt */,
+				2A8E7658282F84EB00C238D3 /* global.hpp */,
+				2A8E7655282F84EB00C238D3 /* Intersection.hpp */,
+				2A8E7661282F84EB00C238D3 /* Light.hpp */,
+				2A8E7666282F84EC00C238D3 /* Material.hpp */,
+				2A8E765E282F84EB00C238D3 /* models */,
+				2A8E7662282F84EB00C238D3 /* OBJ_Loader.hpp */,
+				2A8E7663282F84EB00C238D3 /* Object.hpp */,
+				2A8E7664282F84EB00C238D3 /* Ray.hpp */,
+				2A8E765F282F84EB00C238D3 /* README.md */,
+				2A8E765D282F84EB00C238D3 /* Renderer.cpp */,
+				2A8E7653282F84EB00C238D3 /* Renderer.hpp */,
+				2A8E7665282F84EC00C238D3 /* Scene.cpp */,
+				2A8E765B282F84EB00C238D3 /* Scene.hpp */,
+				2A8E7657282F84EB00C238D3 /* Sphere.hpp */,
+				2A8E765C282F84EB00C238D3 /* Triangle.hpp */,
+				2A8E7667282F84EC00C238D3 /* Vector.cpp */,
+				2A8E7660282F84EB00C238D3 /* Vector.hpp */,
+				2A8E764D282F84CB00C238D3 /* main.cpp */,
+			);
+			path = work7;
 			sourceTree = "<group>";
 		};
 		2AE0F4E427FAD7E500FAD004 /* Frameworks */ = {
@@ -1505,6 +1584,23 @@
 			productReference = 2A8E75ED2822E76400C238D3 /* work6 */;
 			productType = "com.apple.product-type.tool";
 		};
+		2A8E764A282F84CB00C238D3 /* work7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A8E7651282F84CB00C238D3 /* Build configuration list for PBXNativeTarget "work7" */;
+			buildPhases = (
+				2A8E7647282F84CB00C238D3 /* Sources */,
+				2A8E7648282F84CB00C238D3 /* Frameworks */,
+				2A8E7649282F84CB00C238D3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = work7;
+			productName = work7;
+			productReference = 2A8E764B282F84CB00C238D3 /* work7 */;
+			productType = "com.apple.product-type.tool";
+		};
 		2AE0F86B27FADAF400FAD004 /* test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2AE0F87027FADAF400FAD004 /* Build configuration list for PBXNativeTarget "test" */;
@@ -1594,6 +1690,9 @@
 					2A8E75EC2822E76400C238D3 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
+					2A8E764A282F84CB00C238D3 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
 					2AE0F86B27FADAF400FAD004 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -1629,6 +1728,7 @@
 				2A8E7557281DB05200C238D3 /* work4 */,
 				2A8E759B2820F53E00C238D3 /* work5 */,
 				2A8E75EC2822E76400C238D3 /* work6 */,
+				2A8E764A282F84CB00C238D3 /* work7 */,
 			);
 		};
 /* End PBXProject section */
@@ -1669,6 +1769,18 @@
 				2A8E760A2822E78600C238D3 /* BVH.cpp in Sources */,
 				2A8E75F02822E76400C238D3 /* main.cpp in Sources */,
 				2A8E760B2822E78600C238D3 /* Vector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A8E7647282F84CB00C238D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A8E766A282F84EC00C238D3 /* Scene.cpp in Sources */,
+				2A8E7669282F84EC00C238D3 /* Renderer.cpp in Sources */,
+				2A8E766B282F84EC00C238D3 /* Vector.cpp in Sources */,
+				2A8E7668282F84EC00C238D3 /* BVH.cpp in Sources */,
+				2A8E764E282F84CB00C238D3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1951,6 +2063,30 @@
 			};
 			name = Release;
 		};
+		2A8E764F282F84CB00C238D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = work7/work7.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R5UKZ28MJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A8E7650282F84CB00C238D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = work7/work7.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R5UKZ28MJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		2AE0F87127FADAF400FAD004 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2091,6 +2227,15 @@
 			buildConfigurations = (
 				2A8E75F22822E76400C238D3 /* Debug */,
 				2A8E75F32822E76400C238D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A8E7651282F84CB00C238D3 /* Build configuration list for PBXNativeTarget "work7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A8E764F282F84CB00C238D3 /* Debug */,
+				2A8E7650282F84CB00C238D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
